@@ -17,7 +17,7 @@ const ChatbotComponent = () => {
     if (apiKey) {
       const ai = new GoogleGenerativeAI(apiKey);
       setGenAI(ai);
-      setModel(ai.getGenerativeModel({ model: "gemini-1.5-flash" }));
+      setModel(ai.getGenerativeModel({ model: "gemini-2.0-flash" }));
     } else {
       console.error("API Key not found in environment variables");
     }
